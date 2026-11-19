@@ -16,18 +16,24 @@ int     ft_putstr(char *str)
 {
     int     i;
     int     count;
+    int     back;
 
     i = 0;
     count = 0;
 
     if (!str)
     {
-        write(1, "(null)", 6);
+        if (write(1, "(null)", 6) == -1)
+            return (-1);
         return (6);
     }
+
     while(str[i])
     {
-        count += ft_putchar(str[i]); 
+        back =  ft_putchar(str[i]);
+        if (back == - 1)
+            return (-1);
+        count += back;
         i++;
     }
     return (count);
