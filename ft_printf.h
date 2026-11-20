@@ -17,10 +17,10 @@
 # include <stdarg.h>
 # include <stdlib.h>
 
+int     ft_printf(const char *, ...);
 int     ft_putchar(char c);
 int     ft_putstr(char *str);
-int     ft_printf(const char *, ...);
-
-
+int     ft_putnbr(int n);
+int     ft_putunsigned(unsigned int n);
 
 #endif
