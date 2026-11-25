@@ -6,15 +6,15 @@
 /*   By: kmanar <kmanar@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 13:34:38 by kmanar            #+#    #+#             */
-/*   Updated: 2026/11/19 13:34:38 by kmanar           ###   ########.fr       */
+/*   Updated: 2026/11/25 17:07:35 by kmanar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int    ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    if (write(1, &c, 1) == -1)
-        return (-1);
-    return (1);
+	if (write(1, &c, 1) == -1)
+		return (-1);
+	return (1);
 }
